@@ -38,7 +38,7 @@ export default class MessageContainer extends Component {
 
         let email = emailDB || emailManual;
 
-        return fetch(`/api/todos/`, {
+        return fetch(`http://example.org`, {
             headers: JSON_HEADERS,
             method: 'POST',
             body: JSON.stringify({email, messageText})
